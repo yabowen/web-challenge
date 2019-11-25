@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Visualization Dashboard</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <!-- JQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-1">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="titlebox"><a href="index.html" style="color:#fff;">Latitude</a></div>
+            </div>
+        
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">    
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="temp.html">Max Temperature</a></li>
+                        <li><a href="humidity.html">Humidity</a></li>
+                        <li><a href="cloudiness.html">Cloudiness</a></li>
+                        <li><a href="wind.html">Wind Speed</a></li>
+                    </ul>
+                <li><a href="comparison.html">Comparison</a></li>
+                <li><a href="data.html">Data</a></li>
+                </li>
+            </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 box-1">
+                <p class="title-1">Cloudiness</p>
+                <hr>
+                <img style="padding:0.15px;" src="Fig3.png" width=100% alt="City Latitude vs. Cloudiness (01/05/17)">
+                <br>
+                <p class="text-p">Cloudiness does not show a strong relation with latitude either given our City Latitude vs. Cloudiness plot.</p>
+            </div>
+            <div class="col-md-4 box-2">
+                <p class="title-1">Visualizations</p>
+                <hr>
+                <div id="images">
+                <a href="temp.html"><img src="Fig1.png" alt="Latitude vs. Max Temperature" class="img-grid"></a>
+                <a href="humidity.html"><img src="Fig2.png" alt="Latitude vs. Humidity" class="img-grid"></a>
+                <a href="cloudiness.html"><img src="Fig3.png" alt="Latitude vs. Cloudiness" class="img-grid"></a>
+                <a href="wind.html"><img src="Fig4.png" alt="Latitude vs. Wind Speed" class="img-grid"></a>
+            </div>        
+        </div>
+    </div>
+
+
+
+        <footer class="footer-2 navbar-fixed-bottom">
+            <div class="two-toned-footer-color"></div>
+            <p class="text-muted-footer text-center">
+                &copy; Copyright Coding Bootcamp 2017
+            </p>
+        </footer>
+
+
+</body>
+</html>
